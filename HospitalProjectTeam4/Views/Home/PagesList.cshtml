@@ -1,0 +1,19 @@
+﻿@model IEnumerable<HospitalProjectTeam4.Models.Page>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Home</h1>
+
+@foreach (var item in Model)
+{
+    <div class="panel panel-default" style="padding: 10px">
+        <h1>@item.PageTitle</h1>
+        <h3>Author: @item.Doctor.GetFullName() </h3>
+        <p>Creation Date: @item.CreatedDate</p>
+
+        @Html.Raw(item.GetPageBodyWithStyle())
+    </div>
+}
+

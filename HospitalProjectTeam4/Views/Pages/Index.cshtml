@@ -1,0 +1,70 @@
+﻿@model IEnumerable<HospitalProjectTeam4.Models.Page>
+
+@{
+    ViewBag.Title = "Pages";
+}
+
+<h2>Pages</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PageID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Doctor.DoctorFName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PageTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PageBody)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsPublished)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PageStyle)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PageID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doctor.DoctorFName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PageTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PageBody)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsPublished)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PageStyle)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PageID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PageID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PageID })
+            </td>
+        </tr>
+    }
+
+</table>
