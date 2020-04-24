@@ -127,21 +127,34 @@ For news, i also implemented the category CRUD. There is one category to many ne
 * Contribution: Created St. Joseph General Hospital Project ReadMe File structure, created documentation folder with ERD file ,           wireframes folder.
 
 ## Yegor Fomin
-* Articles
-  - Description: 
+* MVP (Home Page + Articles) 
+  - Description: So we have basic CRUD (Create, Read, Update, Delete) functions working "Manage" -> "Pages" to create any articles, posts, news which will located on the home page. Also we will see editor and date of creation for each article. We can edit and delete them.
+  - User Story:  So Doctor Ahmed, chief surger, coming back from Hospital after busy work day. This week he finished researching latest statistics about COVID-19 pandemic in different parts of the world. He organizing structure of his new article and after inputting his doctor ID he creates new post about his research which any user can see on the Home Page. 
   - Files
-    * Models:
-    * Views:
-    * Controller:
+    * Models: Page.cs
+    * Views: Create.cshtml, Delete.cshtml, Details.cshtml, Edit.cshtml, Index.cshtml
+    * Controller: PagesController.cs
  
 * Parking
-  - Description:
+  - Description: Basic CRUD functions for creating booking records in database for Parking.User can check available places and book/free parking spot.
+  - User Story: Security Manager of hospital Sergio Oliva do not want to spend time in the morning looking for a free parking spot for his Ford F150. So he creating a booking record on website and then going to the bed calm. 
   - Files:
-    * Models:
-    * Views:
-    * Controller
+    * Models: ParkingSpot.cs
+    * Views: Create.cshtml, Delete.cshtml, Details.cshtml, Edit.cshtml, Index.cshtml
+    * Controller: ParkingSpotsController.cs
     
 * Contribution:
+    -Builded two features
+    -Completed individual deliverables
+    -Builded Milestones of the Project
+    -Helped building design
+    -Created a video for using interface here is a link:
+    
+    https://youtu.be/WuQ7gLkyxHY
+   
+    
+    
+
   
   
  
